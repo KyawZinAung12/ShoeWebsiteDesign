@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium footwear for every step of your journey. From athletic performance to everyday comfort.">
+    <title>Stride - Premium Footwear</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar text-white py-2 text-center">
+        Free shipping on orders over $75 | Use code <strong>STRIDE20</strong> for 20% off your first order
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Brand Logo">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured">Shop</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <li><a class="dropdown-item" href="#categories">All Categories</a></li>
+                            <li><a class="dropdown-item" href="#categories">Running</a></li>
+                            <li><a class="dropdown-item" href="#categories">Basketball</a></li>
+                            <li><a class="dropdown-item" href="#categories">Casual</a></li>
+                            <li><a class="dropdown-item" href="#categories">Boots</a></li>
+                            <li><a class="dropdown-item" href="#categories">Sandals</a></li>
+                            <li><a class="dropdown-item" href="#categories">Sneakers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-1">
+                    <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+                    <button class="nav-icon-btn" aria-label="Search"><i class="bi bi-search"></i></button>
+                    <button class="nav-icon-btn" aria-label="Account"><i class="bi bi-person"></i></button>
+                    <button class="nav-icon-btn position-relative" aria-label="Cart">
+                        <i class="bi bi-bag"></i>
+                        <span class="cart-badge position-absolute badge rounded-pill">2</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section d-flex align-items-center">
+            <div class="hero-grid-pattern"></div>
+            <div class="container position-relative py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <span class="hero-badge badge rounded-pill px-3 py-2 mb-4">
+                            <i class="bi bi-lightning-charge me-1"></i> New Collection 2026
+                        </span>
+                        <h1 class="hero-title display-font display-3 fw-extrabold mb-4">
+                            Step Into<br>
+                            <span class="highlight">Your Best</span>
+                        </h1>
+                        <p class="hero-lead fs-5 mb-4 mx-auto mx-lg-0" style="max-width: 480px;">
+                            Premium footwear for every step of your journey. From athletic performance to everyday comfort.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-5">
+                            <a href="#featured" class="btn btn-primary btn-rounded">
+                                Shop Now <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                            <a href="#categories" class="btn btn-outline-gold btn-rounded">
+                                Browse Categories
+                            </a>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 pt-2">
+                            <div class="hero-stat-box text-center text-lg-start">
+                                <div class="display-font fs-4 fw-bold hero-stat-value">50K+</div>
+                                <div class="hero-stat-label">Happy Customers</div>
+                            </div>
+                            <div class="hero-stat-box text-center text-lg-start">
+                                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-1">
+                                    <span class="display-font fs-4 fw-bold hero-stat-value">4.9</span>
+                                    <i class="bi bi-star-fill text-brand-gold"></i>
+                                </div>
+                                <div class="hero-stat-label">Average Rating</div>
+                            </div>
+                            <div class="hero-stat-box text-center text-lg-start">
+                                <div class="display-font fs-4 fw-bold hero-stat-value">300+</div>
+                                <div class="hero-stat-label">Styles Available</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image-wrap">
+                            <img src="images/bunner.jpeg" alt="Featured footwear collection" class="img-fluid">
+                            <div class="floating-badge position-absolute top-50 start-0 p-3 d-none d-md-block" style="transform: translate(-15%, -50%);">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;background:rgba(197,160,40,0.15);">
+                                        <i class="bi bi-truck text-brand-gold"></i>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0 small fw-semibold text-brand-brown">Free Shipping</p>
+                                        <p class="mb-0 hero-stat-label">Orders over $75</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <div class="sale-badge-circle rounded-circle d-flex flex-column align-items-center justify-content-center text-white">
+                                    <span style="font-size:0.65rem;font-weight:700;">UP TO</span>
+                                    <span class="display-font fs-4 fw-bold lh-1">40%</span>
+                                    <span style="font-size:0.65rem;font-weight:700;">OFF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 d-none d-md-block">
+                <a href="#categories" class="scroll-indicator d-flex flex-column align-items-center gap-1">
+                    <span class="text-uppercase" style="font-size:0.7rem;letter-spacing:0.1em;">Explore</span>
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Shop by Category -->
+        <section id="categories" class="section-padding">
+            <div class="container">
+                <div class="section-header d-flex flex-column flex-sm-row justify-content-between align-items-sm-end gap-3 mb-5">
+                    <div>
+                        <h2 class="display-font display-5 fw-bold mb-2">Shop by Category</h2>
+                        <p class="mb-0">Find the perfect pair for every occasion</p>
+                    </div>
+                    <a href="#" class="section-link">View All <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="category-card">
+                            <img src="images/p1-1.jpeg" alt="Running">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <span class="category-pill">48 products</span>
+                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Running</h3>
+                                <p class="small text-white-50 mb-2">Performance shoes built for speed and endurance</p>
+                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="category-card">
+                            <img src="images/p2-1.jpeg" alt="Basketball">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <span class="category-pill">32 products</span>
+                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Basketball</h3>
+                                <p class="small text-white-50 mb-2">Court-ready shoes with superior ankle support</p>
+                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="category-card">
+                            <img src="images/p3-1.jpeg" alt="Casual">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <span class="category-pill">64 products</span>
+                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Casual</h3>
+                                <p class="small text-white-50 mb-2">Everyday comfort meets effortless style</p>
+                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="category-card">
+                            <img src="images/p4-1.jpeg" alt="Boots">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <span class="category-pill">28 products</span>
+                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Boots</h3>
+                                <p class="small text-white-50 mb-2">Rugged style for any terrain</p>
+                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="category-card">
+                            <img src="images/p5-1.jpeg" alt="Sandals">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <span class="category-pill">24 products</span>
+                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Sandals</h3>
+                                <p class="small text-white-50 mb-2">Breathable comfort for warmer days</p>
+                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="category-card">
+                            <img src="images/p6-1.jpeg" alt="Sneakers">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <span class="category-pill">86 products</span>
+                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Sneakers</h3>
+                                <p class="small text-white-50 mb-2">Classic and contemporary streetwear styles</p>
+                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collection -->
+        <section id="featured" class="bg-light-section section-padding">
+            <div class="container">
+                <div class="section-header d-flex flex-column flex-sm-row justify-content-between align-items-sm-end gap-3 mb-5">
+                    <div>
+                        <h2 class="display-font display-5 fw-bold mb-2">Featured Collection</h2>
+                        <p class="mb-0">Our most popular styles handpicked for you</p>
+                    </div>
+                    <a href="#" class="section-link">View All Featured <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p1-1.jpeg" alt="Velocity Runner Pro">
+                                    <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-1">
+                                        <span class="product-badge badge-sale">-18%</span>
+                                        <span class="product-badge badge-bestseller">BESTSELLER</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-1">Velocity Runner Pro</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span class="text-secondary ms-1 small">(128)</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <span class="fw-semibold">$179</span>
+                                    <span class="text-secondary text-decoration-line-through small">$219</span>
+                                </div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#ff4136;"></span>
+                                    <span class="color-swatch" style="background:#000;"></span>
+                                    <span class="color-swatch" style="background:#0074d9;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p3-2.jpeg" alt="Streetwise Classic">
+                                </div>
+                                <h5 class="fw-semibold mb-1">Streetwise Classic</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-secondary ms-1 small">(94)</span>
+                                </div>
+                                <div class="mb-2"><span class="fw-semibold">$129</span></div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
+                                    <span class="color-swatch" style="background:#000;"></span>
+                                    <span class="color-swatch" style="background:#1e3a5f;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p2-2.jpeg" alt="Court Dominator X">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="product-badge badge-new">NEW</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-1">Court Dominator X</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="text-secondary ms-1 small">(56)</span>
+                                </div>
+                                <div class="mb-2"><span class="fw-semibold">$199</span></div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#000;"></span>
+                                    <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
+                                    <span class="color-swatch" style="background:#4169e1;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p4-2.jpeg" alt="Trail Blazer GTX">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="product-badge badge-sale">-17%</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-1">Trail Blazer GTX</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span class="text-secondary ms-1 small">(72)</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <span class="fw-semibold">$189</span>
+                                    <span class="text-secondary text-decoration-line-through small">$229</span>
+                                </div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#8b4513;"></span>
+                                    <span class="color-swatch" style="background:#36454f;"></span>
+                                    <span class="color-swatch" style="background:#d2b48c;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Highlights -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="features-section p-4 p-lg-5">
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card d-flex gap-3">
+                                <div class="feature-icon"><i class="bi bi-truck fs-5"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Free Shipping</h5>
+                                    <p class="small mb-0" style="color:var(--text-muted);">Free standard shipping on all orders over $75. Express options available.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card d-flex gap-3">
+                                <div class="feature-icon"><i class="bi bi-arrow-repeat fs-5"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">60-Day Returns</h5>
+                                    <p class="small mb-0" style="color:var(--text-muted);">Changed your mind? Return unworn items within 60 days, no questions asked.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card d-flex gap-3">
+                                <div class="feature-icon"><i class="bi bi-rulers fs-5"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Size Guarantee</h5>
+                                    <p class="small mb-0" style="color:var(--text-muted);">Not the right fit? Exchange for a different size at no extra cost.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card d-flex gap-3">
+                                <div class="feature-icon"><i class="bi bi-shield-check fs-5"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Secure Checkout</h5>
+                                    <p class="small mb-0" style="color:var(--text-muted);">Your payment information is encrypted and secure. Shop with confidence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section id="new-arrivals" class="section-padding">
+            <div class="container">
+                <div class="section-header d-flex flex-column flex-sm-row justify-content-between align-items-sm-end gap-3 mb-5">
+                    <div>
+                        <span class="badge badge-just-dropped rounded-pill px-3 py-2 mb-3">
+                            <span class="d-inline-block rounded-circle me-1" style="width:8px;height:8px;background:var(--brand-gold);"></span>
+                            Just Dropped
+                        </span>
+                        <h2 class="display-font display-5 fw-bold mb-2">New Arrivals</h2>
+                        <p class="mb-0">Fresh styles just landed — be the first to rock them</p>
+                    </div>
+                    <a href="#" class="section-link">Shop New Arrivals <i class="bi bi-chevron-right"></i></a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p2-3.jpeg" alt="Court Dominator X">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="product-badge badge-new">NEW</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-1">Court Dominator X</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    <span class="text-secondary ms-1 small">(56)</span>
+                                </div>
+                                <div class="mb-2"><span class="fw-semibold">$199</span></div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#000;"></span>
+                                    <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
+                                    <span class="color-swatch" style="background:#4169e1;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p5-2.jpeg" alt="Summer Slide Sport">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="product-badge badge-new">NEW</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-1">Summer Slide Sport</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                    <span class="text-secondary ms-1 small">(38)</span>
+                                </div>
+                                <div class="mb-2"><span class="fw-semibold">$49</span></div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#000;"></span>
+                                    <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
+                                    <span class="color-swatch" style="background:#1e3a5f;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p1-2.jpeg" alt="Marathon Elite">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="product-badge badge-new">NEW</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-1">Marathon Elite</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <span class="text-secondary ms-1 small">(112)</span>
+                                </div>
+                                <div class="mb-2"><span class="fw-semibold">$249</span></div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#ccff00;"></span>
+                                    <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
+                                    <span class="color-swatch" style="background:#000;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="product-image-wrap mb-3">
+                                    <img src="images/p3-4.jpeg" alt="Cloud 9 Recovery">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="product-badge badge-new">NEW</span>
+                                    </div>
+                                </div>
+                                <h5 class="fw-semibold mb-1">Cloud 9 Recovery</h5>
+                                <div class="star-rating mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    <span class="text-secondary ms-1 small">(67)</span>
+                                </div>
+                                <div class="mb-2"><span class="fw-semibold">$59</span></div>
+                                <div class="d-flex gap-1">
+                                    <span class="color-swatch" style="background:#000;"></span>
+                                    <span class="color-swatch" style="background:#6b7280;"></span>
+                                    <span class="color-swatch" style="background:#ff6b6b;"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge rounded-pill px-3 py-2 mb-3" style="background:rgba(197,160,40,0.15);color:var(--brand-gold-light);border:1px solid rgba(197,160,40,0.25);">Customer Love</span>
+                    <h2 class="display-font display-5 fw-bold text-white mb-3">What Our Customers Say</h2>
+                    <p class="mx-auto mb-0" style="max-width:560px;color:rgba(255,255,255,0.55);">
+                        Join thousands of happy customers who have made Stride their go-to footwear brand
+                    </p>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <blockquote class="text-white-50 mb-4">
+                                "Stride has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last marathon by 8 minutes."
+                            </blockquote>
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Marcus Chen" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                <div>
+                                    <p class="fw-semibold text-white mb-0">Marcus Chen</p>
+                                    <p class="text-secondary small mb-0">Marathon Runner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <blockquote class="text-white-50 mb-4">
+                                "I wear Stride shoes for all my classes. They are versatile, stylish, and most importantly, my feet never hurt after a long day of training."
+                            </blockquote>
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Emily Rodriguez" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                <div>
+                                    <p class="fw-semibold text-white mb-0">Emily Rodriguez</p>
+                                    <p class="text-secondary small mb-0">Fitness Instructor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <blockquote class="text-white-50 mb-4">
+                                "The quality and attention to detail is unmatched. I have been collecting sneakers for 15 years and Stride has become my go-to brand."
+                            </blockquote>
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="David Kim" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                <div>
+                                    <p class="fw-semibold text-white mb-0">David Kim</p>
+                                    <p class="text-secondary small mb-0">Sneaker Enthusiast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="stats-bar d-flex flex-wrap justify-content-center align-items-center gap-4 gap-lg-5 pt-5" style="border-top:1px solid rgba(197,160,40,0.2);">
+                    <div class="text-center">
+                        <div class="stat-value">50K+</div>
+                        <p class="text-secondary small mb-0">Happy Customers</p>
+                    </div>
+                    <div class="stat-divider d-none d-md-block"></div>
+                    <div class="text-center">
+                        <div class="stat-value">4.9/5</div>
+                        <p class="text-secondary small mb-0">Average Rating</p>
+                    </div>
+                    <div class="stat-divider d-none d-md-block"></div>
+                    <div class="text-center">
+                        <div class="stat-value">15K+</div>
+                        <p class="text-secondary small mb-0">5-Star Reviews</p>
+                    </div>
+                    <div class="stat-divider d-none d-md-block"></div>
+                    <div class="text-center">
+                        <div class="stat-value">98%</div>
+                        <p class="text-secondary small mb-0">Would Recommend</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer-section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <a href="#" class="footer-brand d-inline-block mb-3">
+                        <img src="images/logo.png" alt="Brand Logo" class="img-fluid">
+                    </a>
+                    <p class="text-secondary small">
+                        Premium footwear for every step of your journey. From athletic performance to everyday comfort.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2">
+                    <h6 class="fw-semibold mb-3">Shop</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="footer-link">New Arrivals</a></li>
+                        <li><a href="#" class="footer-link">Best Sellers</a></li>
+                        <li><a href="#" class="footer-link">Running</a></li>
+                        <li><a href="#" class="footer-link">Basketball</a></li>
+                        <li><a href="#" class="footer-link">Casual</a></li>
+                        <li><a href="#" class="footer-link">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2">
+                    <h6 class="fw-semibold mb-3">Help</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Shipping Info</a></li>
+                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <h6 class="fw-semibold mb-3">Company</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="footer-link">Our Story</a></li>
+                        <li><a href="#" class="footer-link">Sustainability</a></li>
+                        <li><a href="#" class="footer-link">Athletes</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Store Locator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-top">
+            <div class="container py-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <p class="text-secondary small mb-0">&copy; 2026 Stride. All rights reserved.</p>
+                    <div class="d-flex gap-2">
+                        <span class="payment-icon" style="color:#1A1F71;">VISA</span>
+                        <span class="payment-icon">MC</span>
+                        <span class="payment-icon" style="color:#006FCF;">AMEX</span>
+                        <span class="payment-icon" style="color:#003087;">PayPal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
+    <script>
+        (function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+
+            function setIcon(theme) {
+                if (!themeIcon) return;
+                themeIcon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+            }
+
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.body.classList.add('dark');
+                } else {
+                    document.body.classList.remove('dark');
+                }
+                setIcon(theme);
+                try { localStorage.setItem('theme', theme); } catch (e) {}
+            }
+
+            const stored = (function() {
+                try { return localStorage.getItem('theme'); } catch(e){ return null; }
+            })();
+
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initial = stored || (prefersDark ? 'dark' : 'light');
+            applyTheme(initial);
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+                    applyTheme(newTheme);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
