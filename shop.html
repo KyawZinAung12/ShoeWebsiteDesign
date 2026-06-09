@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium footwear for every step of your journey. From athletic performance to everyday comfort.">
-    <title>Stride - Premium Footwear</title>
+    <title>SixElephant - Myanmar Traditional Footwear</title>
     <link rel="icon" href="images/logo.png" type="image/png">
 
     <!-- Google Fonts -->
@@ -21,7 +21,7 @@
 
     <!-- Announcement Bar -->
     <div class="announcement-bar text-white py-2 text-center">
-        Free shipping on orders over $75 | Use code <strong>STRIDE20</strong> for 20% off your first order
+        Authentic Myanmar Traditional Footwear • Timeless Craftsmanship • Premium Quality
     </div>
 
     <!-- Navbar -->
@@ -37,18 +37,18 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-lg-2">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                         <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                            <li><a class="dropdown-item" href="#categories">All Categories</a></li>
-                            <li><a class="dropdown-item" href="#categories">Running</a></li>
-                            <li><a class="dropdown-item" href="#categories">Basketball</a></li>
-                            <li><a class="dropdown-item" href="#categories">Casual</a></li>
-                            <li><a class="dropdown-item" href="#categories">Boots</a></li>
-                            <li><a class="dropdown-item" href="#categories">Sandals</a></li>
-                            <li><a class="dropdown-item" href="#categories">Sneakers</a></li>
+                            <li><a class="dropdown-item" href="shop.html">All Categories</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Running</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Basketball</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Casual</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Boots</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Sandals</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Sneakers</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">About</a></li>
@@ -56,7 +56,7 @@
                 </ul>
                 <div class="d-flex align-items-center gap-1">
                     <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
-                    <button class="nav-icon-btn" aria-label="Search"><i class="bi bi-search"></i></button>
+                    <button class="nav-icon-btn" id="searchToggle" aria-label="Search"><i class="bi bi-search"></i></button>
                     <button class="nav-icon-btn" aria-label="Account"><i class="bi bi-person"></i></button>
                     <button class="nav-icon-btn position-relative" aria-label="Cart">
                         <i class="bi bi-bag"></i>
@@ -67,17 +67,40 @@
         </div>
     </nav>
 
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+        <button class="search-close" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
+        <div class="search-container">
+            <form class="search-form" action="#" method="get" role="search">
+                <i class="bi bi-search search-icon" id="searchInputIcon"></i>
+                <input type="search" id="searchInput" placeholder="Search shoes, categories, styles..." autocomplete="off" spellcheck="false">
+                <span class="search-underline"></span>
+            </form>
+            <div class="search-hints">
+                <span>Press</span>
+                <kbd><i class="bi bi-command"></i>K</kbd>
+                <span>to search</span>
+                <span class="mx-1 opacity-50">·</span>
+                <kbd>ESC</kbd>
+                <span>to close</span>
+            </div>
+        </div>
+    </div>
+
     <main class="py-5">
         <div class="container">
 
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
                 <div>
-                    <h1 class="display-font">Shop All</h1>
-                    <p class="mb-0 text-muted">Browse our complete collection of premium footwear</p>
+                    <h1 class="display-font mb-1">Shop All</h1>
+                    <p class="mb-0 text-muted">
+                        Browse our complete collection of premium footwear
+                    </p>
                 </div>
-                <div class="d-flex align-items-center gap-4">
-                    <label class="me-2 small text-muted">Sort by</label>
-                    <select class="form-select form-select-sm">
+
+                <div class="d-flex align-items-center gap-2">
+                    <label class="small text-muted mb-0">Sort by</label>
+                    <select class="form-select form-select-sm" style="width: 180px;">
                         <option>Featured</option>
                         <option>Price: Low to High</option>
                         <option>Price: High to Low</option>
@@ -127,7 +150,7 @@
                         <!-- Card 1 -->
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card p-3">
-                                <a href="#" class="text-decoration-none">
+                                <a href="shop-detail.html" class="text-decoration-none">
                                     <div class="product-image-wrap mb-3 position-relative">
                                         <img src="images/p1-1.jpeg" alt="Velocity Runner Pro" class="img-fluid">
                                         <div class="position-absolute top-0 start-0 m-3">
@@ -141,7 +164,6 @@
                                             <div class="star-rating text-brand-gold">
                                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
                                             </div>
-                                            <small class="text-muted">4.9</small>
                                         </div>
                                     </div>
 
@@ -158,7 +180,7 @@
                         <!-- Card 2 -->
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card p-3">
-                                <a href="#" class="text-decoration-none">
+                                <a href="shop-detail.html" class="text-decoration-none">
                                     <div class="product-image-wrap mb-3 position-relative">
                                         <img src="images/p3-2.jpeg" alt="Streetwise Classic" class="img-fluid">
                                         <div class="position-absolute top-0 start-0 m-3">
@@ -172,7 +194,6 @@
                                             <div class="star-rating text-brand-gold">
                                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                             </div>
-                                            <small class="text-muted">4.8</small>
                                         </div>
                                     </div>
 
@@ -188,7 +209,7 @@
                         <!-- Card 3 -->
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card p-3">
-                                <a href="#" class="text-decoration-none">
+                                <a href="shop-detail.html" class="text-decoration-none">
                                     <div class="product-image-wrap mb-3 position-relative">
                                         <img src="images/p2-2.jpeg" alt="Court Dominator X" class="img-fluid">
                                         <div class="position-absolute top-0 start-0 m-3">
@@ -202,7 +223,6 @@
                                             <div class="star-rating text-brand-gold">
                                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
                                             </div>
-                                            <small class="text-muted">4.7</small>
                                         </div>
                                     </div>
 
@@ -218,7 +238,7 @@
                         <!-- Card 4 -->
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card p-3">
-                                <a href="#" class="text-decoration-none">
+                                <a href="shop-detail.html" class="text-decoration-none">
                                     <div class="product-image-wrap mb-3 position-relative">
                                         <img src="images/p4-2.jpeg" alt="Trail Blazer GTX" class="img-fluid">
                                         <div class="position-absolute top-0 start-0 m-3">
@@ -232,7 +252,6 @@
                                             <div class="star-rating text-brand-gold">
                                                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
                                             </div>
-                                            <small class="text-muted">4.8</small>
                                         </div>
                                     </div>
 
@@ -245,11 +264,140 @@
                             </div>
                         </div>
 
-                        <!-- more sample cards (use existing product-card styles) -->
+                        <!-- Card 1 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-card p-3">
+                                <a href="shop-detail.html" class="text-decoration-none">
+                                    <div class="product-image-wrap mb-3 position-relative">
+                                        <img src="images/p1-1.jpeg" alt="Velocity Runner Pro" class="img-fluid">
+                                        <div class="position-absolute top-0 start-0 m-3">
+                                            <span class="product-badge badge-sale">-18%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-meta d-flex align-items-center mb-1">
+                                        <small class="text-muted">Running</small>
+                                        <div class="ms-auto d-flex align-items-center gap-1">
+                                            <div class="star-rating text-brand-gold">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h6 class="product-title fw-semibold mb-1">Velocity Runner Pro</h6>
+
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <div class="product-price fw-semibold">$179 <small class="text-decoration-line-through text-muted">$219</small></div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-card p-3">
+                                <a href="shop-detail.html" class="text-decoration-none">
+                                    <div class="product-image-wrap mb-3 position-relative">
+                                        <img src="images/p3-2.jpeg" alt="Streetwise Classic" class="img-fluid">
+                                        <div class="position-absolute top-0 start-0 m-3">
+                                            <span class="product-badge badge-bestseller">BESTSELLER</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-meta d-flex align-items-center mb-1">
+                                        <small class="text-muted">Sneakers</small>
+                                        <div class="ms-auto d-flex align-items-center gap-1">
+                                            <div class="star-rating text-brand-gold">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h6 class="product-title fw-semibold mb-1">Streetwise Classic</h6>
+
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <div class="product-price fw-semibold">$129</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-card p-3">
+                                <a href="shop-detail.html" class="text-decoration-none">
+                                    <div class="product-image-wrap mb-3 position-relative">
+                                        <img src="images/p2-2.jpeg" alt="Court Dominator X" class="img-fluid">
+                                        <div class="position-absolute top-0 start-0 m-3">
+                                            <span class="product-badge badge-new">NEW</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-meta d-flex align-items-center mb-1">
+                                        <small class="text-muted">Basketball</small>
+                                        <div class="ms-auto d-flex align-items-center gap-1">
+                                            <div class="star-rating text-brand-gold">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h6 class="product-title fw-semibold mb-1">Court Dominator X</h6>
+
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <div class="product-price fw-semibold">$199</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-card p-3">
+                                <a href="shop-detail.html" class="text-decoration-none">
+                                    <div class="product-image-wrap mb-3 position-relative">
+                                        <img src="images/p4-2.jpeg" alt="Trail Blazer GTX" class="img-fluid">
+                                        <div class="position-absolute top-0 start-0 m-3">
+                                            <span class="product-badge badge-sale">-17%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-meta d-flex align-items-center mb-1">
+                                        <small class="text-muted">Boots</small>
+                                        <div class="ms-auto d-flex align-items-center gap-1">
+                                            <div class="star-rating text-brand-gold">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h6 class="product-title fw-semibold mb-1">Trail Blazer GTX</h6>
+
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <div class="product-price fw-semibold">$189 <small class="text-decoration-line-through text-muted">$229</small></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
 
-                    <div class="mt-5 text-center text-muted">Showing 16 products</div>
+                    <!-- Pagination -->
+                    <div class="d-flex justify-content-end mt-5">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                        </ul>
+                    </div>
+
                 </section>
             </div>
         </div>
@@ -259,7 +407,7 @@
     <footer id="footer" class="footer-section">
         <div class="container py-5">
             <div class="row">
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="#" class="footer-brand d-inline-block mb-3">
                         <img src="images/logo.png" alt="Brand Logo" class="img-fluid">
                     </a>
@@ -273,7 +421,7 @@
                         <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-3 col-lg-2">
+                <div class="col-6 col-sm-3 col-md-3">
                     <h6 class="fw-semibold mb-3">Shop</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="#" class="footer-link">New Arrivals</a></li>
@@ -284,7 +432,7 @@
                         <li><a href="#" class="footer-link">Sale</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-3 col-lg-2">
+                <div class="col-6 col-sm-3 col-md-3">
                     <h6 class="fw-semibold mb-3">Help</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="#" class="footer-link">FAQ</a></li>
@@ -294,7 +442,7 @@
                         <li><a href="#" class="footer-link">Track Order</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-md-2">
                     <h6 class="fw-semibold mb-3">Company</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="#" class="footer-link">Our Story</a></li>
@@ -360,6 +508,55 @@
                 themeToggle.addEventListener('click', () => {
                     const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
                     applyTheme(newTheme);
+                });
+            }
+        })();
+    </script>
+    <script>
+        (function() {
+            const overlay = document.getElementById('searchOverlay');
+            const toggle = document.getElementById('searchToggle');
+            const close = document.getElementById('searchClose');
+            const input = document.getElementById('searchInput');
+            const icon = document.getElementById('searchInputIcon');
+
+            function openSearch() {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                setTimeout(() => input && input.focus(), 100);
+                if (icon) icon.classList.add('focused');
+            }
+
+            function closeSearch() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                if (input) input.value = '';
+                if (icon) icon.classList.remove('focused');
+            }
+
+            if (toggle) toggle.addEventListener('click', openSearch);
+            if (close) close.addEventListener('click', closeSearch);
+
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeSearch();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    overlay.classList.contains('active') ? closeSearch() : openSearch();
+                }
+                if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                    closeSearch();
+                }
+            });
+
+            if (input) {
+                input.addEventListener('focus', function() {
+                    if (icon) icon.classList.add('focused');
+                });
+                input.addEventListener('blur', function() {
+                    if (!input.value) icon.classList.remove('focused');
                 });
             }
         })();

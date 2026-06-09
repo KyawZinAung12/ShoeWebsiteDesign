@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium footwear for every step of your journey. From athletic performance to everyday comfort.">
-    <title>Stride - Premium Footwear</title>
+    <title>SixElephant - Myanmar Traditional Footwear</title>
     <link rel="icon" href="images/logo.png" type="image/png">
 
     <!-- Google Fonts -->
@@ -21,7 +21,7 @@
 
     <!-- Announcement Bar -->
     <div class="announcement-bar text-white py-2 text-center">
-        Free shipping on orders over $75 | Use code <strong>STRIDE20</strong> for 20% off your first order
+        Authentic Myanmar Traditional Footwear • Timeless Craftsmanship • Premium Quality
     </div>
 
     <!-- Navbar -->
@@ -42,13 +42,13 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                         <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                            <li><a class="dropdown-item" href="#categories">All Categories</a></li>
-                            <li><a class="dropdown-item" href="#categories">Running</a></li>
-                            <li><a class="dropdown-item" href="#categories">Basketball</a></li>
-                            <li><a class="dropdown-item" href="#categories">Casual</a></li>
-                            <li><a class="dropdown-item" href="#categories">Boots</a></li>
-                            <li><a class="dropdown-item" href="#categories">Sandals</a></li>
-                            <li><a class="dropdown-item" href="#categories">Sneakers</a></li>
+                            <li><a class="dropdown-item" href="shop.html">All Categories</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Running</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Basketball</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Casual</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Boots</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Sandals</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Sneakers</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">About</a></li>
@@ -56,7 +56,7 @@
                 </ul>
                 <div class="d-flex align-items-center gap-1">
                     <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
-                    <button class="nav-icon-btn" aria-label="Search"><i class="bi bi-search"></i></button>
+                    <button class="nav-icon-btn" id="searchToggle" aria-label="Search"><i class="bi bi-search"></i></button>
                     <button class="nav-icon-btn" aria-label="Account"><i class="bi bi-person"></i></button>
                     <button class="nav-icon-btn position-relative" aria-label="Cart">
                         <i class="bi bi-bag"></i>
@@ -66,6 +66,26 @@
             </div>
         </div>
     </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+        <button class="search-close" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
+        <div class="search-container">
+            <form class="search-form" action="#" method="get" role="search">
+                <i class="bi bi-search search-icon" id="searchInputIcon"></i>
+                <input type="search" id="searchInput" placeholder="Search shoes, categories, styles..." autocomplete="off" spellcheck="false">
+                <span class="search-underline"></span>
+            </form>
+            <div class="search-hints">
+                <span>Press</span>
+                <kbd><i class="bi bi-command"></i>K</kbd>
+                <span>to search</span>
+                <span class="mx-1 opacity-50">·</span>
+                <kbd>ESC</kbd>
+                <span>to close</span>
+            </div>
+        </div>
+    </div>
 
     <main>
         <!-- Hero Section -->
@@ -88,7 +108,7 @@
                             <a href="#featured" class="btn btn-primary btn-rounded">
                                 Shop Now <i class="bi bi-arrow-right ms-1"></i>
                             </a>
-                            <a href="#categories" class="btn btn-outline-gold btn-rounded">
+                            <a href="shop.html" class="btn btn-outline-gold btn-rounded">
                                 Browse Categories
                             </a>
                         </div>
@@ -136,7 +156,7 @@
                 </div>
             </div>
             <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 d-none d-md-block">
-                <a href="#categories" class="scroll-indicator d-flex flex-column align-items-center gap-1">
+                <a href="shop.html" class="scroll-indicator d-flex flex-column align-items-center gap-1">
                     <span class="text-uppercase" style="font-size:0.7rem;letter-spacing:0.1em;">Explore</span>
                     <i class="bi bi-chevron-down"></i>
                 </a>
@@ -258,7 +278,6 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-half"></i>
-                                    <span class="text-secondary ms-1 small">(128)</span>
                                 </div>
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <span class="fw-semibold">$179</span>
@@ -285,7 +304,6 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
-                                    <span class="text-secondary ms-1 small">(94)</span>
                                 </div>
                                 <div class="mb-2"><span class="fw-semibold">$129</span></div>
                                 <div class="d-flex gap-1">
@@ -312,7 +330,6 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star"></i>
-                                    <span class="text-secondary ms-1 small">(56)</span>
                                 </div>
                                 <div class="mb-2"><span class="fw-semibold">$199</span></div>
                                 <div class="d-flex gap-1">
@@ -339,7 +356,6 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-half"></i>
-                                    <span class="text-secondary ms-1 small">(72)</span>
                                 </div>
                                 <div class="d-flex align-items-center gap-2 mb-2">
                                     <span class="fw-semibold">$189</span>
@@ -361,8 +377,8 @@
         <section class="section-padding">
             <div class="container">
                 <div class="features-section p-4 p-lg-5">
-                    <div class="row g-4">
-                        <div class="col-sm-6 col-lg-3">
+                    <div class="row g-3 g-xl-2">
+                        <div class="col-md-6 col-xl-3">
                             <div class="feature-card d-flex gap-3">
                                 <div class="feature-icon"><i class="bi bi-truck fs-5"></i></div>
                                 <div>
@@ -371,7 +387,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="col-md-6 col-xl-3">
                             <div class="feature-card d-flex gap-3">
                                 <div class="feature-icon"><i class="bi bi-arrow-repeat fs-5"></i></div>
                                 <div>
@@ -380,7 +396,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="col-md-6 col-xl-3">
                             <div class="feature-card d-flex gap-3">
                                 <div class="feature-icon"><i class="bi bi-rulers fs-5"></i></div>
                                 <div>
@@ -389,7 +405,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="col-md-6 col-xl-3">
                             <div class="feature-card d-flex gap-3">
                                 <div class="feature-icon"><i class="bi bi-shield-check fs-5"></i></div>
                                 <div>
@@ -430,7 +446,6 @@
                                 <h5 class="fw-semibold mb-1">Court Dominator X</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                                    <span class="text-secondary ms-1 small">(56)</span>
                                 </div>
                                 <div class="mb-2"><span class="fw-semibold">$199</span></div>
                                 <div class="d-flex gap-1">
@@ -453,7 +468,6 @@
                                 <h5 class="fw-semibold mb-1">Summer Slide Sport</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                                    <span class="text-secondary ms-1 small">(38)</span>
                                 </div>
                                 <div class="mb-2"><span class="fw-semibold">$49</span></div>
                                 <div class="d-flex gap-1">
@@ -476,7 +490,6 @@
                                 <h5 class="fw-semibold mb-1">Marathon Elite</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                    <span class="text-secondary ms-1 small">(112)</span>
                                 </div>
                                 <div class="mb-2"><span class="fw-semibold">$249</span></div>
                                 <div class="d-flex gap-1">
@@ -499,7 +512,6 @@
                                 <h5 class="fw-semibold mb-1">Cloud 9 Recovery</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                                    <span class="text-secondary ms-1 small">(67)</span>
                                 </div>
                                 <div class="mb-2"><span class="fw-semibold">$59</span></div>
                                 <div class="d-flex gap-1">
@@ -606,7 +618,7 @@
     <footer id="footer" class="footer-section">
         <div class="container py-5">
             <div class="row">
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="#" class="footer-brand d-inline-block mb-3">
                         <img src="images/logo.png" alt="Brand Logo" class="img-fluid">
                     </a>
@@ -620,7 +632,7 @@
                         <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-3 col-lg-2">
+                <div class="col-6 col-sm-3 col-md-3">
                     <h6 class="fw-semibold mb-3">Shop</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="#" class="footer-link">New Arrivals</a></li>
@@ -631,7 +643,7 @@
                         <li><a href="#" class="footer-link">Sale</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-3 col-lg-2">
+                <div class="col-6 col-sm-3 col-md-3">
                     <h6 class="fw-semibold mb-3">Help</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="#" class="footer-link">FAQ</a></li>
@@ -641,7 +653,7 @@
                         <li><a href="#" class="footer-link">Track Order</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-md-2">
                     <h6 class="fw-semibold mb-3">Company</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="#" class="footer-link">Our Story</a></li>
@@ -707,6 +719,55 @@
                 themeToggle.addEventListener('click', () => {
                     const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
                     applyTheme(newTheme);
+                });
+            }
+        })();
+    </script>
+    <script>
+        (function() {
+            const overlay = document.getElementById('searchOverlay');
+            const toggle = document.getElementById('searchToggle');
+            const close = document.getElementById('searchClose');
+            const input = document.getElementById('searchInput');
+            const icon = document.getElementById('searchInputIcon');
+
+            function openSearch() {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                setTimeout(() => input && input.focus(), 100);
+                if (icon) icon.classList.add('focused');
+            }
+
+            function closeSearch() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                if (input) input.value = '';
+                if (icon) icon.classList.remove('focused');
+            }
+
+            if (toggle) toggle.addEventListener('click', openSearch);
+            if (close) close.addEventListener('click', closeSearch);
+
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeSearch();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    overlay.classList.contains('active') ? closeSearch() : openSearch();
+                }
+                if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                    closeSearch();
+                }
+            });
+
+            if (input) {
+                input.addEventListener('focus', function() {
+                    if (icon) icon.classList.add('focused');
+                });
+                input.addEventListener('blur', function() {
+                    if (!input.value) icon.classList.remove('focused');
                 });
             }
         })();
