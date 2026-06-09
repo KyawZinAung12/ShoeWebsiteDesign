@@ -176,6 +176,57 @@ body.dark .bg-white {
     background: var(--brand-red);
 }
 
+/* Hamburger menu */
+.navbar-toggler {
+    padding: 0.5rem;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.hamburger {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background: var(--text-body);
+    border-radius: 4px;
+    transform-origin: center;
+    transition: all 0.35s var(--ease-smooth);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8.75px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8.75px) rotate(-45deg);
+}
+
+body.dark .hamburger span {
+    background: var(--text-body);
+}
+
 /* Buttons */
 .btn {
     transition: all 0.35s var(--ease-smooth);
