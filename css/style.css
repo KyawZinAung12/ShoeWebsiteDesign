@@ -578,10 +578,38 @@ body.dark .hamburger span {
 
 /* Testimonials */
 .testimonials-section {
+    position: relative;
     background: rgb(22, 18, 18);
     background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
+    transition: background-color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+/* Dark mode background overlay */
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(22, 18, 18, 0.50);
+    transition: background-color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .testimonials-section::before {
+    background: rgba(11, 11, 13, 0.85);
+}
+
+/* Optional: Add a subtle filter to background image in dark mode */
+body.dark .testimonials-section {
+    filter: brightness(0.8) contrast(1.1);
+}
+
+.testimonials-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .testimonial-card {
@@ -591,7 +619,9 @@ body.dark .hamburger span {
     border-radius: var(--radius-lg);
     padding: 2rem;
     height: 100%;
-    transition: transform 0.4s var(--ease-smooth), background 0.4s var(--ease-smooth);
+    transition: transform 0.4s var(--ease-smooth), 
+                background 0.4s var(--ease-smooth),
+                border-color var(--theme-transition-duration) var(--ease-smooth);
 }
 
 .testimonial-card:hover {
@@ -599,8 +629,78 @@ body.dark .hamburger span {
     background: rgba(255, 255, 255, 0.09);
 }
 
+body.dark .testimonial-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(197, 160, 40, 0.25);
+}
+
+body.dark .testimonial-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
 .testimonial-stars {
     color: var(--brand-gold-light);
+}
+
+.testimonial-card blockquote {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .testimonial-card blockquote {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.testimonial-card .text-secondary {
+    color: rgba(255, 255, 255, 0.6) !important;
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .testimonial-card .text-secondary {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.testimonial-card .fw-semibold {
+    color: rgba(255, 255, 255, 0.95);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .testimonial-card .fw-semibold {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Testimonials header elements */
+.testimonial-badge {
+    background: rgba(197, 160, 40, 0.15);
+    color: var(--brand-gold-light);
+    border: 1px solid rgba(197, 160, 40, 0.25);
+    transition: background var(--theme-transition-duration) var(--ease-smooth),
+                color var(--theme-transition-duration) var(--ease-smooth),
+                border-color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .testimonial-badge {
+    background: rgba(197, 160, 40, 0.2);
+    color: var(--brand-gold);
+    border-color: rgba(197, 160, 40, 0.35);
+}
+
+.testimonial-title {
+    color: rgba(255, 255, 255, 0.95);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .testimonial-title {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .testimonial-subtitle {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .stats-bar .stat-value {
@@ -1595,29 +1695,64 @@ body.dark .qty-value {
 }
 
 .values-section {
+    position: relative;
     background: var(--white);
     background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
+    transition: background-color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+/* Dark mode overlay for values section */
+.values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    transition: background-color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .values-section::before {
+    background: rgba(11, 11, 13, 0.85);
+}
+
+.values-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .value-card {
     text-align: center;
     padding: 2.5rem 1.5rem;
     border-radius: var(--radius-lg);
-    /* background: var(--cream); */
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
     height: 100%;
-    border: 1px solid rgba(197, 160, 40, 0.6);
-    transition: transform 0.4s var(--ease-smooth), box-shadow 0.4s var(--ease-smooth);
+    border: 1px solid rgba(197, 160, 40, 0.3);
+    transition: transform 0.4s var(--ease-smooth), 
+                box-shadow 0.4s var(--ease-smooth),
+                background var(--theme-transition-duration) var(--ease-smooth),
+                border-color var(--theme-transition-duration) var(--ease-smooth);
 }
 
 .value-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-hover);
-    background: rgba(255, 255, 255, 0.09);
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(197, 160, 40, 0.5);
+}
 
+body.dark .value-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(197, 160, 40, 0.25);
+}
+
+body.dark .value-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(197, 160, 40, 0.4);
 }
 
 .value-card .value-icon {
@@ -1632,16 +1767,69 @@ body.dark .qty-value {
     font-size: 1.5rem;
     margin: 0 auto 1.25rem;
     box-shadow: 0 4px 16px rgba(197, 160, 40, 0.1);
+    transition: background var(--theme-transition-duration) var(--ease-smooth),
+                color var(--theme-transition-duration) var(--ease-smooth),
+                box-shadow var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .value-card .value-icon {
+    background: #1a1c1e;
+    color: var(--brand-gold);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .value-card h5 {
     color: var(--brand-brown);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .value-card h5 {
+    color: var(--text-body);
 }
 
 .value-card p {
     color: var(--text-muted);
     font-size: 0.9rem;
     line-height: 1.6;
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .value-card p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Values section header */
+.values-section .about-hero-badge {
+    background: rgba(197, 160, 40, 0.15);
+    color: var(--brand-gold-dark);
+    border: 1px solid rgba(197, 160, 40, 0.25);
+    transition: background var(--theme-transition-duration) var(--ease-smooth),
+                color var(--theme-transition-duration) var(--ease-smooth),
+                border-color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .values-section .about-hero-badge {
+    background: rgba(197, 160, 40, 0.2);
+    color: var(--brand-gold);
+    border-color: rgba(197, 160, 40, 0.35);
+}
+
+.values-section h2 {
+    color: var(--brand-brown);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .values-section h2 {
+    color: var(--text-body);
+}
+
+.values-section p {
+    color: var(--text-muted);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .values-section p {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .team-card {
@@ -2119,7 +2307,10 @@ body.dark .map-placeholder {
     justify-content: center;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: all 0.3s var(--ease-smooth);
+    transition: all 0.3s var(--ease-smooth),
+                background var(--theme-transition-duration) var(--ease-smooth),
+                border-color var(--theme-transition-duration) var(--ease-smooth),
+                color var(--theme-transition-duration) var(--ease-smooth);
 }
 
 .slider-btn:hover {
@@ -2127,6 +2318,18 @@ body.dark .map-placeholder {
     border-color: var(--brand-gold);
     color: var(--brand-brown);
     transform: scale(1.1);
+}
+
+body.dark .slider-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(197, 160, 40, 0.35);
+    color: var(--brand-gold);
+}
+
+body.dark .slider-btn:hover {
+    background: var(--brand-gold);
+    border-color: var(--brand-gold);
+    color: var(--brand-brown);
 }
 
 .slider-dots {
@@ -2141,7 +2344,8 @@ body.dark .map-placeholder {
     border: none;
     background: rgba(197, 160, 40, 0.3);
     cursor: pointer;
-    transition: all 0.3s var(--ease-smooth);
+    transition: all 0.3s var(--ease-smooth),
+                background var(--theme-transition-duration) var(--ease-smooth);
 }
 
 .slider-dot:hover {
@@ -2152,6 +2356,18 @@ body.dark .map-placeholder {
 .slider-dot.active {
     background: var(--brand-gold-light);
     transform: scale(1.2);
+}
+
+body.dark .slider-dot {
+    background: rgba(197, 160, 40, 0.2);
+}
+
+body.dark .slider-dot:hover {
+    background: rgba(197, 160, 40, 0.4);
+}
+
+body.dark .slider-dot.active {
+    background: var(--brand-gold);
 }
 
 /* Mobile: 1 card at a time */
