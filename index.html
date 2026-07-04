@@ -13,15 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap 5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap-icons.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
     <!-- Announcement Bar -->
     <div class="announcement-bar text-white py-2 text-center">
-        Authentic Myanmar Traditional Footwear • Timeless Craftsmanship • Premium Quality
+        မြန်မာ့ရိုးရာ လက်မှုပညာဖြင့် ဖန်တီးထားသော အရည်အသွေးမြင့် ဖိနပ်များ။ သက်တောင့်သက်သာ၊ ခိုင်ခံ့ပြီး အစဉ်အလာ၏ တန်ဖိုးကို ခြေလှမ်းတိုင်းတွင် ခံစားနိုင်ပါသည်။
     </div>
 
     <!-- Navbar -->
@@ -47,14 +49,12 @@
                         <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                         <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
                             <li><a class="dropdown-item" href="shop.html">All Categories</a></li>
-                            <li><a class="dropdown-item" href="shop.html">Running</a></li>
-                            <li><a class="dropdown-item" href="shop.html">Basketball</a></li>
-                            <li><a class="dropdown-item" href="shop.html">Casual</a></li>
-                            <li><a class="dropdown-item" href="shop.html">Boots</a></li>
-                            <li><a class="dropdown-item" href="shop.html">Sandals</a></li>
-                            <li><a class="dropdown-item" href="shop.html">Sneakers</a></li>
+                            <li><a class="dropdown-item" href="shop.html">ကောင်းထက်သာ</a></li>
+                            <li><a class="dropdown-item" href="shop.html">ဧကရီ</a></li>
+                            <li><a class="dropdown-item" href="shop.html">ပြည်တော်ဝင်</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -62,10 +62,7 @@
                     <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
                     <button class="nav-icon-btn" id="searchToggle" aria-label="Search"><i class="bi bi-search"></i></button>
                     <button class="nav-icon-btn" aria-label="Account"><i class="bi bi-person"></i></button>
-                    <button class="nav-icon-btn position-relative" aria-label="Cart">
-                        <i class="bi bi-bag"></i>
-                        <span class="cart-badge position-absolute badge rounded-pill">2</span>
-                    </button>
+                    
                 </div>
             </div>
         </div>
@@ -101,15 +98,14 @@
                         <span class="hero-badge badge rounded-pill px-3 py-2 mb-4">
                             <i class="bi bi-lightning-charge me-1"></i> New Collection 2026
                         </span>
-                        <h1 class="hero-title display-font display-3 fw-extrabold mb-4">
-                            Step Into<br>
-                            <span class="highlight">Your Best</span>
+                        <h1 class="hero-title display-font display-3 fw-bold lh-base mb-4">
+                            ခြေလှမ်းတိုင်းမှာ ယုံကြည်မှုအပြည့်
                         </h1>
                         <p class="hero-lead fs-5 mb-4 mx-auto mx-lg-0" style="max-width: 480px;">
-                            Premium footwear for every step of your journey. From athletic performance to everyday comfort.
+                            အရည်အသွေးမြင့်၊ သက်တောင့်သက်သာရှိပြီး စတိုင်ကျသော ဖိနပ်များဖြင့် သင့်ခြေလှမ်းတိုင်းကို ယုံကြည်မှုအပြည့်ဖြင့် လျှောက်လှမ်းလိုက်ပါ။
                         </p>
                         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-5">
-                            <a href="#featured" class="btn btn-primary btn-rounded">
+                            <a href="shop.html" class="btn btn-primary btn-rounded">
                                 Shop Now <i class="bi bi-arrow-right ms-1"></i>
                             </a>
                             <a href="shop.html" class="btn btn-outline-gold btn-rounded">
@@ -123,7 +119,7 @@
                             </div>
                             <div class="hero-stat-box text-center text-lg-start">
                                 <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-1">
-                                    <span class="display-font fs-4 fw-bold hero-stat-value">4.9</span>
+                                    <span class="display-font fs-4 fw-bold hero-stat-value">5</span>
                                     <i class="bi bi-star-fill text-brand-gold"></i>
                                 </div>
                                 <div class="hero-stat-label">Average Rating</div>
@@ -136,8 +132,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-image-wrap">
-                            <img src="images/bunner.jpeg" alt="Featured footwear collection" class="img-fluid">
-                            <div class="floating-badge position-absolute top-50 start-0 p-3 d-none d-md-block" style="transform: translate(-15%, -50%);">
+                            <img src="images/bunner1.jpg" alt="Featured footwear collection" class="img-fluid">
+                            <!-- <div class="floating-badge position-absolute top-50 start-0 p-3 d-none d-md-block" style="transform: translate(-15%, -50%);">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;background:rgba(197,160,40,0.15);">
                                         <i class="bi bi-truck text-brand-gold"></i>
@@ -147,14 +143,14 @@
                                         <p class="mb-0 hero-stat-label">Orders over $75</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="position-absolute top-0 end-0 m-3">
+                            </div> -->
+                            <!-- <div class="position-absolute top-0 end-0 m-3">
                                 <div class="sale-badge-circle rounded-circle d-flex flex-column align-items-center justify-content-center text-white">
                                     <span style="font-size:0.65rem;font-weight:700;">UP TO</span>
                                     <span class="display-font fs-4 fw-bold lh-1">40%</span>
                                     <span style="font-size:0.65rem;font-weight:700;">OFF</span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -175,28 +171,16 @@
                         <h2 class="display-font display-5 fw-bold mb-2">Shop by Category</h2>
                         <p class="mb-0">Find the perfect pair for every occasion</p>
                     </div>
-                    <a href="#" class="section-link">View All <i class="bi bi-chevron-right"></i></a>
+                    <a href="shop.html" class="section-link">View All <i class="bi bi-chevron-right"></i></a>
                 </div>
                 <div class="row g-4">
                     <div class="col-sm-6 col-lg-4">
                         <a href="#" class="category-card">
-                            <img src="images/p1-1.jpeg" alt="Running">
-                            <div class="category-overlay"></div>
-                            <div class="category-content">
-                                <span class="category-pill">48 products</span>
-                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Running</h3>
-                                <p class="small text-white-50 mb-2">Performance shoes built for speed and endurance</p>
-                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <a href="#" class="category-card">
-                            <img src="images/p2-1.jpeg" alt="Basketball">
+                            <img src="images/akayi.jpg" alt="Basketball">
                             <div class="category-overlay"></div>
                             <div class="category-content">
                                 <span class="category-pill">32 products</span>
-                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Basketball</h3>
+                                <h3 class="display-font brand_color fs-3 fw-bold mt-2 mb-1">ဧကရီ</h3>
                                 <p class="small text-white-50 mb-2">Court-ready shoes with superior ankle support</p>
                                 <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
                             </div>
@@ -204,11 +188,11 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <a href="#" class="category-card">
-                            <img src="images/p3-1.jpeg" alt="Casual">
+                            <img src="images/kaunghtetthar.jpg" alt="Casual">
                             <div class="category-overlay"></div>
                             <div class="category-content">
                                 <span class="category-pill">64 products</span>
-                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Casual</h3>
+                                <h3 class="display-font brand_color fs-3 fw-bold mt-2 mb-1">ကောင်းထက်သာ</h3>
                                 <p class="small text-white-50 mb-2">Everyday comfort meets effortless style</p>
                                 <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
                             </div>
@@ -216,36 +200,12 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <a href="#" class="category-card">
-                            <img src="images/p4-1.jpeg" alt="Boots">
+                            <img src="images/pyitawwin.jpg" alt="Boots">
                             <div class="category-overlay"></div>
                             <div class="category-content">
                                 <span class="category-pill">28 products</span>
-                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Boots</h3>
+                                <h3 class="display-font brand_color fs-3 fw-bold mt-2 mb-1">ပြည်တော်ဝင်</h3>
                                 <p class="small text-white-50 mb-2">Rugged style for any terrain</p>
-                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <a href="#" class="category-card">
-                            <img src="images/p5-1.jpeg" alt="Sandals">
-                            <div class="category-overlay"></div>
-                            <div class="category-content">
-                                <span class="category-pill">24 products</span>
-                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Sandals</h3>
-                                <p class="small text-white-50 mb-2">Breathable comfort for warmer days</p>
-                                <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <a href="#" class="category-card">
-                            <img src="images/p6-1.jpeg" alt="Sneakers">
-                            <div class="category-overlay"></div>
-                            <div class="category-content">
-                                <span class="category-pill">86 products</span>
-                                <h3 class="display-font fs-3 fw-bold mt-2 mb-1">Sneakers</h3>
-                                <p class="small text-white-50 mb-2">Classic and contemporary streetwear styles</p>
                                 <span class="fw-medium">Shop Now <i class="bi bi-arrow-right"></i></span>
                             </div>
                         </a>
@@ -262,20 +222,20 @@
                         <h2 class="display-font display-5 fw-bold mb-2">Featured Collection</h2>
                         <p class="mb-0">Our most popular styles handpicked for you</p>
                     </div>
-                    <a href="#" class="section-link">View All Featured <i class="bi bi-chevron-right"></i></a>
+                    <a href="shop.html" class="section-link">View All Featured <i class="bi bi-chevron-right"></i></a>
                 </div>
                 <div class="row g-4">
                     <div class="col-sm-6 col-lg-3">
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p1-1.jpeg" alt="Velocity Runner Pro">
+                                    <img src="images/p1-1.jpeg" alt="ကျောက်ကတ္တီပါ ခုံပါး ဖိနပ်">
                                     <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-1">
                                         <span class="product-badge badge-sale">-18%</span>
                                         <span class="product-badge badge-bestseller">BESTSELLER</span>
                                     </div>
                                 </div>
-                                <h5 class="fw-semibold mb-1">Velocity Runner Pro</h5>
+                                <h5 class="fw-semibold mb-1">ကျောက်ကတ္တီပါ ခုံပါး ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -284,8 +244,8 @@
                                     <i class="bi bi-star-half"></i>
                                 </div>
                                 <div class="d-flex align-items-center gap-2 mb-2">
-                                    <span class="fw-semibold">$179</span>
-                                    <span class="text-secondary text-decoration-line-through small">$219</span>
+                                    <span class="fw-semibold">K 70,000</span>
+                                    <span class="text-secondary text-decoration-line-through small">K 57,400</span>
                                 </div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#ff4136;"></span>
@@ -299,9 +259,9 @@
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p3-2.jpeg" alt="Streetwise Classic">
+                                    <img src="images/p3-2.jpeg" alt="ကြိုးကတ္တီပါ ခုံပါး ဖိနပ်">
                                 </div>
-                                <h5 class="fw-semibold mb-1">Streetwise Classic</h5>
+                                <h5 class="fw-semibold mb-1">ကြိုးကတ္တီပါ ခုံပါး ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -309,7 +269,7 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <div class="mb-2"><span class="fw-semibold">$129</span></div>
+                                <div class="mb-2"><span class="fw-semibold">K 80,000</span></div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
                                     <span class="color-swatch" style="background:#000;"></span>
@@ -322,12 +282,12 @@
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p2-2.jpeg" alt="Court Dominator X">
+                                    <img src="images/p2-2.jpeg" alt="ကျောက်ကတ္တီပါ ခုံထူ ဖိနပ်">
                                     <div class="position-absolute top-0 start-0 m-3">
                                         <span class="product-badge badge-new">NEW</span>
                                     </div>
                                 </div>
-                                <h5 class="fw-semibold mb-1">Court Dominator X</h5>
+                                <h5 class="fw-semibold mb-1">ကျောက်ကတ္တီပါ ခုံထူ ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -335,7 +295,7 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star"></i>
                                 </div>
-                                <div class="mb-2"><span class="fw-semibold">$199</span></div>
+                                <div class="mb-2"><span class="fw-semibold">K 90,000</span></div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#000;"></span>
                                     <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
@@ -348,12 +308,12 @@
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p4-2.jpeg" alt="Trail Blazer GTX">
+                                    <img src="images/p5-3.jpeg" alt="သရေ ဖိနပ်">
                                     <div class="position-absolute top-0 start-0 m-3">
-                                        <span class="product-badge badge-sale">-17%</span>
+                                        <span class="product-badge badge-sale">-10%</span>
                                     </div>
                                 </div>
-                                <h5 class="fw-semibold mb-1">Trail Blazer GTX</h5>
+                                <h5 class="fw-semibold mb-1">သရေ ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -362,8 +322,8 @@
                                     <i class="bi bi-star-half"></i>
                                 </div>
                                 <div class="d-flex align-items-center gap-2 mb-2">
-                                    <span class="fw-semibold">$189</span>
-                                    <span class="text-secondary text-decoration-line-through small">$229</span>
+                                    <span class="fw-semibold">K 60,000</span>
+                                    <span class="text-secondary text-decoration-line-through small">K 54,000</span>
                                 </div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#8b4513;"></span>
@@ -435,23 +395,23 @@
                         <h2 class="display-font display-5 fw-bold mb-2">New Arrivals</h2>
                         <p class="mb-0">Fresh styles just landed — be the first to rock them</p>
                     </div>
-                    <a href="#" class="section-link">Shop New Arrivals <i class="bi bi-chevron-right"></i></a>
+                    <!-- <a href="#" class="section-link">Shop New Arrivals <i class="bi bi-chevron-right"></i></a> -->
                 </div>
                 <div class="row g-4">
                     <div class="col-sm-6 col-lg-3">
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p2-3.jpeg" alt="Court Dominator X">
+                                    <img src="images/p2-3.jpeg" alt="ကျောက်ကတ္တီပါ ခုံထူ ဖိနပ်">
                                     <div class="position-absolute top-0 start-0 m-3">
                                         <span class="product-badge badge-new">NEW</span>
                                     </div>
                                 </div>
-                                <h5 class="fw-semibold mb-1">Court Dominator X</h5>
+                                <h5 class="fw-semibold mb-1">ကျောက်ကတ္တီပါ ခုံထူ ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
                                 </div>
-                                <div class="mb-2"><span class="fw-semibold">$199</span></div>
+                                <div class="mb-2"><span class="fw-semibold">K 80,000</span></div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#000;"></span>
                                     <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
@@ -464,16 +424,16 @@
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p5-2.jpeg" alt="Summer Slide Sport">
+                                    <img src="images/p5-2.jpeg" alt="သရေ ဖိနပ်">
                                     <div class="position-absolute top-0 start-0 m-3">
                                         <span class="product-badge badge-new">NEW</span>
                                     </div>
                                 </div>
-                                <h5 class="fw-semibold mb-1">Summer Slide Sport</h5>
+                                <h5 class="fw-semibold mb-1">သရေ ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
                                 </div>
-                                <div class="mb-2"><span class="fw-semibold">$49</span></div>
+                                <div class="mb-2"><span class="fw-semibold">K 54,000</span></div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#000;"></span>
                                     <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
@@ -486,16 +446,16 @@
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p1-2.jpeg" alt="Marathon Elite">
+                                    <img src="images/p1-2.jpeg" alt="ကျောက်ကတ္တီပါ ခုံပါး ဖိနပ်">
                                     <div class="position-absolute top-0 start-0 m-3">
                                         <span class="product-badge badge-new">NEW</span>
                                     </div>
                                 </div>
-                                <h5 class="fw-semibold mb-1">Marathon Elite</h5>
+                                <h5 class="fw-semibold mb-1">ကျောက်ကတ္တီပါ ခုံပါး ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                 </div>
-                                <div class="mb-2"><span class="fw-semibold">$249</span></div>
+                                <div class="mb-2"><span class="fw-semibold">K 80,000</span></div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#ccff00;"></span>
                                     <span class="color-swatch" style="background:#fff;border-color:#d1d5db;"></span>
@@ -508,16 +468,16 @@
                         <div class="product-card">
                             <a href="#" class="text-decoration-none text-dark">
                                 <div class="product-image-wrap mb-3">
-                                    <img src="images/p3-4.jpeg" alt="Cloud 9 Recovery">
+                                    <img src="images/p3-4.jpeg" alt="ကြိုးကတ္တီပါ ခုံပါး ဖိနပ်">
                                     <div class="position-absolute top-0 start-0 m-3">
                                         <span class="product-badge badge-new">NEW</span>
                                     </div>
                                 </div>
-                                <h5 class="fw-semibold mb-1">Cloud 9 Recovery</h5>
+                                <h5 class="fw-semibold mb-1">ကြိုးကတ္တီပါ ခုံပါး ဖိနပ်</h5>
                                 <div class="star-rating mb-2">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
                                 </div>
-                                <div class="mb-2"><span class="fw-semibold">$59</span></div>
+                                <div class="mb-2"><span class="fw-semibold">K 70,000</span></div>
                                 <div class="d-flex gap-1">
                                     <span class="color-swatch" style="background:#000;"></span>
                                     <span class="color-swatch" style="background:#6b7280;"></span>
@@ -535,85 +495,184 @@
             <div class="container">
                 <div class="text-center mb-5">
                     <span class="badge rounded-pill px-3 py-2 mb-3" style="background:rgba(197,160,40,0.15);color:var(--brand-gold-light);border:1px solid rgba(197,160,40,0.25);">Customer Love</span>
-                    <h2 class="display-font display-5 fw-bold text-white mb-3">What Our Customers Say</h2>
-                    <p class="mx-auto mb-0" style="max-width:560px;color:rgba(255,255,255,0.55);">
+                    <h2 class="display-font display-5 fw-bold  mb-3">What Our Customers Say</h2>
+                    <p class="mx-auto mb-0" style="max-width:560px;">
                         Join thousands of happy customers who have made Six Elephant their go-to footwear brand
                     </p>
                 </div>
-                <div class="row g-4 mb-5">
-                    <div class="col-md-4">
-                        <div class="testimonial-card">
-                            <div class="testimonial-stars mb-3">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                            <blockquote class="text-white-50 mb-4">
-                                "Six Elephant has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last marathon by 8 minutes."
-                            </blockquote>
-                            <div class="d-flex align-items-center gap-3">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Marcus Chen" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
-                                <div>
-                                    <p class="fw-semibold text-white mb-0">Marcus Chen</p>
-                                    <p class="text-secondary small mb-0">Marathon Runner</p>
+                <div class="testimonials-slider-container">
+                    <div class="testimonials-slider">
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "Six Elephant has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last marathon by 8 minutes."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Marcus Chen" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Marcus Chen</p>
+                                        <p class="text-secondary small mb-0">Marathon Runner</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "As a professional athlete, I need shoes that can keep up with my training. Six Elephant delivers exceptional performance and comfort."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=200&h=200&fit=crop" alt="Alex Morgan" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Alex Morgan</p>
+                                        <p class="text-secondary small mb-0">Professional Athlete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "The durability of these shoes is incredible. I've been wearing the same pair for over a year and they still look and feel amazing."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop" alt="Sarah Johnson" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Sarah Johnson</p>
+                                        <p class="text-secondary small mb-0">Daily Commuter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "I wear Six Elephant shoes for all my classes. They are versatile, stylish, and most importantly, my feet never hurt after a long day of training."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Emily Rodriguez" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Emily Rodriguez</p>
+                                        <p class="text-secondary small mb-0">Fitness Instructor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "As a professional athlete, I need shoes that can keep up with my training. Six Elephant delivers exceptional performance and comfort."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=200&h=200&fit=crop" alt="Alex Morgan" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Alex Morgan</p>
+                                        <p class="text-secondary small mb-0">Professional Athlete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "The durability of these shoes is incredible. I've been wearing the same pair for over a year and they still look and feel amazing."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop" alt="Sarah Johnson" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Sarah Johnson</p>
+                                        <p class="text-secondary small mb-0">Daily Commuter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "I wear Six Elephant shoes for all my classes. They are versatile, stylish, and most importantly, my feet never hurt after a long day of training."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Emily Rodriguez" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Emily Rodriguez</p>
+                                        <p class="text-secondary small mb-0">Fitness Instructor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "As a professional athlete, I need shoes that can keep up with my training. Six Elephant delivers exceptional performance and comfort."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=200&h=200&fit=crop" alt="Alex Morgan" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Alex Morgan</p>
+                                        <p class="text-secondary small mb-0">Professional Athlete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars mb-3">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mb-4">
+                                    "The durability of these shoes is incredible. I've been wearing the same pair for over a year and they still look and feel amazing."
+                                </blockquote>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop" alt="Sarah Johnson" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
+                                    <div>
+                                        <p class="fw-semibold mb-0">Sarah Johnson</p>
+                                        <p class="text-secondary small mb-0">Daily Commuter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="col-md-4">
-                        <div class="testimonial-card">
-                            <div class="testimonial-stars mb-3">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                            <blockquote class="text-white-50 mb-4">
-                                "I wear Six Elephant shoes for all my classes. They are versatile, stylish, and most importantly, my feet never hurt after a long day of training."
-                            </blockquote>
-                            <div class="d-flex align-items-center gap-3">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Emily Rodriguez" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
-                                <div>
-                                    <p class="fw-semibold text-white mb-0">Emily Rodriguez</p>
-                                    <p class="text-secondary small mb-0">Fitness Instructor</p>
-                                </div>
-                            </div>
+                    <div class="slider-controls d-flex justify-content-center align-items-center gap-3 mt-4">
+                        <button class="slider-btn slider-prev" aria-label="Previous testimonial">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots d-flex gap-2">
+                            <button class="slider-dot active" aria-label="Go to slide 1"></button>
+                            <button class="slider-dot" aria-label="Go to slide 2"></button>
+                            <button class="slider-dot" aria-label="Go to slide 3"></button>
+                            <button class="slider-dot" aria-label="Go to slide 4"></button>
+                            <button class="slider-dot" aria-label="Go to slide 5"></button>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="testimonial-card">
-                            <div class="testimonial-stars mb-3">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                            <blockquote class="text-white-50 mb-4">
-                                "The quality and attention to detail is unmatched. I have been collecting sneakers for 15 years and Six Elephant has become my go-to brand."
-                            </blockquote>
-                            <div class="d-flex align-items-center gap-3">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="David Kim" class="rounded-circle" width="48" height="48" style="object-fit:cover;">
-                                <div>
-                                    <p class="fw-semibold text-white mb-0">David Kim</p>
-                                    <p class="text-secondary small mb-0">Sneaker Enthusiast</p>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="slider-btn slider-next" aria-label="Next testimonial">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-                <!-- <div class="stats-bar d-flex flex-wrap justify-content-center align-items-center gap-4 gap-lg-5 pt-5" style="border-top:1px solid rgba(197,160,40,0.2);">
-                    <div class="text-center">
-                        <div class="stat-value">50K+</div>
-                        <p class="text-secondary small mb-0">Happy Customers</p>
-                    </div>
-                    <div class="stat-divider d-none d-md-block"></div>
-                    <div class="text-center">
-                        <div class="stat-value">4.9/5</div>
-                        <p class="text-secondary small mb-0">Average Rating</p>
-                    </div>
-                    <div class="stat-divider d-none d-md-block"></div>
-                    <div class="text-center">
-                        <div class="stat-value">15K+</div>
-                        <p class="text-secondary small mb-0">5-Star Reviews</p>
-                    </div>
-                    <div class="stat-divider d-none d-md-block"></div>
-                    <div class="text-center">
-                        <div class="stat-value">98%</div>
-                        <p class="text-secondary small mb-0">Would Recommend</p>
-                    </div>
-                </div> -->
             </div>
         </section>
     </main>
@@ -627,7 +686,7 @@
                         <img src="images/logo.png" alt="Brand Logo" class="img-fluid">
                     </a>
                     <p class="text-secondary small">
-                        Premium footwear for every step of your journey. From athletic performance to everyday comfort.
+                        အရည်အသွေးမြင့်၊ သက်တောင့်သက်သာရှိပြီး စတိုင်ကျသော ဖိနပ်များဖြင့် သင့်ခြေလှမ်းတိုင်းကို ယုံကြည်မှုအပြည့်ဖြင့် လျှောက်လှမ်းလိုက်ပါ။
                     </p>
                     <div class="d-flex gap-3 mt-4">
                         <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
@@ -639,32 +698,29 @@
                 <div class="col-6 col-sm-3 col-md-3">
                     <h6 class="fw-semibold mb-3">Shop</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="#" class="footer-link">New Arrivals</a></li>
-                        <li><a href="#" class="footer-link">Best Sellers</a></li>
-                        <li><a href="#" class="footer-link">Running</a></li>
-                        <li><a href="#" class="footer-link">Basketball</a></li>
-                        <li><a href="#" class="footer-link">Casual</a></li>
-                        <li><a href="#" class="footer-link">Sale</a></li>
+                        <li><a href="#" class="footer-link">All Categories</a></li>
+                        <li><a href="#" class="footer-link">ဧကရီ</a></li>
+                        <li><a href="#" class="footer-link">ပြည်တော်ဝင်</a></li>
+                        <li><a href="#" class="footer-link">ကောင်းထက်သာ</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-3 col-md-3">
                     <h6 class="fw-semibold mb-3">Help</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="#" class="footer-link">FAQ</a></li>
-                        <li><a href="#" class="footer-link">Shipping Info</a></li>
-                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                        <li><a href="#" class="footer-link">Reviews</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
                         <li><a href="#" class="footer-link">Contact Us</a></li>
-                        <li><a href="#" class="footer-link">Track Order</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-2">
-                    <h6 class="fw-semibold mb-3">Company</h6>
+                    <h6 class="fw-semibold mb-3">Contact</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="#" class="footer-link">Our Story</a></li>
-                        <li><a href="#" class="footer-link">Sustainability</a></li>
-                        <li><a href="#" class="footer-link">Athletes</a></li>
-                        <li><a href="#" class="footer-link">Careers</a></li>
-                        <li><a href="#" class="footer-link">Store Locator</a></li>
+                        <li><a href="#" class="footer-link"><i class="bi bi-geo-alt"></i> Mandalay, Myanmar</a></li>
+                        <li><a href="#" class="footer-link"><i class="bi bi-telephone"></i> +95 999999999</a></li>
+                        <li><a href="#" class="footer-link"><i class="bi bi-envelope"></i> info@example.com</a></li>
+                        <li><a href="#" class="footer-link"><i class="bi bi-map"></i> Map</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -697,6 +753,242 @@
             navbarCollapse.addEventListener('shown.bs.collapse', () => hamburger.classList.add('active'));
             navbarCollapse.addEventListener('hidden.bs.collapse', () => hamburger.classList.remove('active'));
         }
+    </script>
+    <script>
+        // Testimonials Auto Slider - Responsive: 3 cards on desktop, 1 card on mobile
+        (function() {
+            const slider = document.querySelector('.testimonials-slider');
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dots = document.querySelectorAll('.slider-dot');
+            const prevBtn = document.querySelector('.slider-prev');
+            const nextBtn = document.querySelector('.slider-next');
+            const sliderContainer = document.querySelector('.testimonials-slider-container');
+            
+            if (!slider || slides.length === 0) return;
+            
+            let currentSlide = 0;
+            let slideInterval;
+            const slideDuration = 4000; // 4 seconds
+            
+            // Drag/swipe variables
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let prevTranslate = 0;
+            let animationID = null;
+            
+            function getVisibleCards() {
+                const width = window.innerWidth;
+                if (width >= 992) return 3; // Desktop: 3 cards
+                if (width >= 768) return 2; // Tablet: 2 cards
+                return 1; // Mobile: 1 card
+            }
+            
+            function updateSlider() {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                
+                // Update active classes for dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+                
+                // Calculate transform based on visible cards
+                const slideWidth = 100 / visibleCards;
+                const transformValue = -currentSlide * slideWidth;
+                
+                // Apply smooth transition for normal updates
+                slider.style.transition = 'transform 0.6s var(--ease-smooth)';
+                slider.style.transform = `translateX(${transformValue}%)`;
+                
+                // Adjust current slide if it goes beyond available slides for current view
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                if (currentSlide > maxSlide) {
+                    currentSlide = maxSlide;
+                }
+            }
+            
+            function goToSlide(index) {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                
+                currentSlide = Math.min(index, maxSlide);
+                updateSlider();
+                resetInterval();
+            }
+            
+            function nextSlide() {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                
+                if (currentSlide >= maxSlide) {
+                    currentSlide = 0; // Loop back to start
+                } else {
+                    currentSlide++;
+                }
+                updateSlider();
+            }
+            
+            function prevSlide() {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                
+                if (currentSlide <= 0) {
+                    currentSlide = maxSlide; // Go to last possible slide
+                } else {
+                    currentSlide--;
+                }
+                updateSlider();
+            }
+            
+            function startInterval() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            function resetInterval() {
+                clearInterval(slideInterval);
+                startInterval();
+            }
+            
+            function stopInterval() {
+                clearInterval(slideInterval);
+            }
+            
+            // Drag/Swipe functionality
+            function getPositionX(event) {
+                return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+            }
+            
+            function setSliderPosition() {
+                const visibleCards = getVisibleCards();
+                const slideWidth = 100 / visibleCards;
+                const dragTranslate = (currentTranslate / slider.offsetWidth) * 100;
+                
+                // Remove transition during drag
+                slider.style.transition = 'none';
+                slider.style.transform = `translateX(${dragTranslate}%)`;
+            }
+            
+            function animation() {
+                setSliderPosition();
+                if (isDragging) {
+                    requestAnimationFrame(animation);
+                }
+            }
+            
+            function startDrag(event) {
+                isDragging = true;
+                startPos = getPositionX(event);
+                animationID = requestAnimationFrame(animation);
+                
+                // Stop auto-sliding during drag
+                stopInterval();
+                
+                // Prevent default behavior
+                event.preventDefault();
+            }
+            
+            function drag(event) {
+                if (isDragging) {
+                    const currentPosition = getPositionX(event);
+                    currentTranslate = prevTranslate + currentPosition - startPos;
+                }
+            }
+            
+            function endDrag() {
+                if (!isDragging) return;
+                
+                isDragging = false;
+                cancelAnimationFrame(animationID);
+                
+                const visibleCards = getVisibleCards();
+                const slideWidth = 100 / visibleCards;
+                const movedBy = currentTranslate - prevTranslate;
+                
+                // Determine if drag was significant enough to change slide
+                if (Math.abs(movedBy) > slider.offsetWidth * 0.1) { // 10% threshold
+                    if (movedBy < 0) {
+                        nextSlide();
+                    } else {
+                        prevSlide();
+                    }
+                } else {
+                    // Return to original position
+                    updateSlider();
+                }
+                
+                // Reset drag variables
+                currentTranslate = 0;
+                prevTranslate = 0;
+                
+                // Restart auto-sliding after a delay
+                setTimeout(() => {
+                    if (!isDragging) {
+                        resetInterval();
+                    }
+                }, 1000);
+            }
+            
+            // Event listeners for buttons and dots
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    resetInterval();
+                });
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    resetInterval();
+                });
+            }
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                });
+            });
+            
+            // Hover auto-stop
+            if (sliderContainer) {
+                sliderContainer.addEventListener('mouseenter', () => {
+                    stopInterval();
+                });
+                
+                sliderContainer.addEventListener('mouseleave', () => {
+                    if (!isDragging) {
+                        resetInterval();
+                    }
+                });
+            }
+            
+            // Touch events for mobile drag/swipe
+            slider.addEventListener('touchstart', startDrag);
+            slider.addEventListener('touchmove', drag);
+            slider.addEventListener('touchend', endDrag);
+            
+            // Mouse events for desktop drag
+            slider.addEventListener('mousedown', startDrag);
+            slider.addEventListener('mousemove', drag);
+            slider.addEventListener('mouseup', endDrag);
+            slider.addEventListener('mouseleave', endDrag);
+            
+            // Prevent image drag
+            slider.querySelectorAll('img').forEach(img => {
+                img.addEventListener('dragstart', (e) => e.preventDefault());
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', updateSlider);
+            
+            // Initialize
+            updateSlider();
+            startInterval();
+        })();
     </script>
     <script>
         (function() {

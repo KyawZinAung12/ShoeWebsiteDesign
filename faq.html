@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium footwear for every step of your journey. From athletic performance to everyday comfort.">
+    <title>SixElephant - Myanmar Traditional Footwear</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap-icons.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar text-white py-2 text-center">
+        မြန်မာ့ရိုးရာ လက်မှုပညာဖြင့် ဖန်တီးထားသော အရည်အသွေးမြင့် ဖိနပ်များ။ သက်တောင့်သက်သာ၊ ခိုင်ခံ့ပြီး အစဉ်အလာ၏ တန်ဖိုးကို ခြေလှမ်းတိုင်းတွင် ခံစားနိုင်ပါသည်။
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Brand Logo">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <li><a class="dropdown-item" href="shop.html">All Categories</a></li>
+                            <li><a class="dropdown-item" href="shop.html">ကောင်းထက်သာ</a></li>
+                            <li><a class="dropdown-item" href="shop.html">ဧကရီ</a></li>
+                            <li><a class="dropdown-item" href="shop.html">ပြည်တော်ဝင်</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-1">
+                    <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+                    <button class="nav-icon-btn" id="searchToggle" aria-label="Search"><i class="bi bi-search"></i></button>
+                    <button class="nav-icon-btn" aria-label="Account"><i class="bi bi-person"></i></button>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+        <button class="search-close" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
+        <div class="search-container">
+            <form class="search-form" action="#" method="get" role="search">
+                <i class="bi bi-search search-icon" id="searchInputIcon"></i>
+                <input type="search" id="searchInput" placeholder="Search shoes, categories, styles..." autocomplete="off" spellcheck="false">
+                <span class="search-underline"></span>
+            </form>
+            <div class="search-hints">
+                <span>Press</span>
+                <kbd><i class="bi bi-command"></i>K</kbd>
+                <span>to search</span>
+                <span class="mx-1 opacity-50">·</span>
+                <kbd>ESC</kbd>
+                <span>to close</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        
+        <!-- FAQ -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="about-hero-badge mb-3 d-inline-flex">
+                        <i class="bi bi-question-circle"></i> Quick Answers
+                    </span>
+                    <h2 class="display-font display-4 fw-bold mb-3">Frequently Asked Questions</h2>
+                    <p class="mx-auto" style="max-width:560px;color:var(--text-muted);">Find quick answers to the most common questions. If you need more help, just drop us a message.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion faq-accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        What is your shipping policy?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We offer free standard shipping on all orders over $75. Standard delivery takes 5–7 business days. Express shipping (2–3 business days) is available for $12.99. International shipping rates vary by destination.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        How do I return or exchange an item?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We accept returns within 60 days of purchase. Items must be unworn and in original packaging. Start a return through your account dashboard or contact our support team for a prepaid shipping label.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Do you have a size guide?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes! Our size guide is available on every product page. We recommend measuring your foot length and comparing it to our size chart. If you are between sizes, we suggest sizing up for the best fit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Can I change or cancel my order?
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You can modify or cancel your order within 1 hour of placing it. After that, the order enters processing and cannot be changed. Contact us immediately if you need assistance.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        What payment methods do you accept?
+                                    </button>
+                                </h3>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We accept Visa, Mastercard, American Express, PayPal, Apple Pay, and Google Pay. All transactions are encrypted and processed securely.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer-section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="footer-brand d-inline-block mb-3">
+                        <img src="images/logo.png" alt="Brand Logo" class="img-fluid">
+                    </a>
+                    <p class="text-secondary small">
+                        အရည်အသွေးမြင့်၊ သက်တောင့်သက်သာရှိပြီး စတိုင်ကျသော ဖိနပ်များဖြင့် သင့်ခြေလှမ်းတိုင်းကို ယုံကြည်မှုအပြည့်ဖြင့် လျှောက်လှမ်းလိုက်ပါ။
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-3">
+                    <h6 class="fw-semibold mb-3">Shop</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="footer-link">All Categories</a></li>
+                        <li><a href="#" class="footer-link">ဧကရီ</a></li>
+                        <li><a href="#" class="footer-link">ပြည်တော်ဝင်</a></li>
+                        <li><a href="#" class="footer-link">ကောင်းထက်သာ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 col-md-3">
+                    <h6 class="fw-semibold mb-3">Help</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Reviews</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                    <h6 class="fw-semibold mb-3">Contact</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="footer-link"><i class="bi bi-geo-alt"></i> Mandalay, Myanmar</a></li>
+                        <li><a href="#" class="footer-link"><i class="bi bi-telephone"></i> +95 999999999</a></li>
+                        <li><a href="#" class="footer-link"><i class="bi bi-envelope"></i> info@example.com</a></li>
+                        <li><a href="#" class="footer-link"><i class="bi bi-map"></i> Map</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-top">
+            <div class="container py-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <p class="text-secondary small mb-0">&copy; 2026 Six Elephant. All rights reserved.</p>
+                    <div class="d-flex gap-2">
+                        <span class="payment-icon" style="color:#1A1F71;">VISA</span>
+                        <span class="payment-icon">MC</span>
+                        <span class="payment-icon" style="color:#006FCF;">AMEX</span>
+                        <span class="payment-icon" style="color:#003087;">PayPal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 10);
+        });
+
+        const navbarCollapse = document.getElementById('navbarNav');
+        const hamburger = document.querySelector('.hamburger');
+        if (navbarCollapse && hamburger) {
+            navbarCollapse.addEventListener('shown.bs.collapse', () => hamburger.classList.add('active'));
+            navbarCollapse.addEventListener('hidden.bs.collapse', () => hamburger.classList.remove('active'));
+        }
+    </script>
+    <script>
+        // Testimonials Auto Slider - Responsive: 3 cards on desktop, 1 card on mobile
+        (function() {
+            const slider = document.querySelector('.testimonials-slider');
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dots = document.querySelectorAll('.slider-dot');
+            const prevBtn = document.querySelector('.slider-prev');
+            const nextBtn = document.querySelector('.slider-next');
+            const sliderContainer = document.querySelector('.testimonials-slider-container');
+            
+            if (!slider || slides.length === 0) return;
+            
+            let currentSlide = 0;
+            let slideInterval;
+            const slideDuration = 4000; // 4 seconds
+            
+            // Drag/swipe variables
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let prevTranslate = 0;
+            let animationID = null;
+            
+            function getVisibleCards() {
+                const width = window.innerWidth;
+                if (width >= 992) return 3; // Desktop: 3 cards
+                if (width >= 768) return 2; // Tablet: 2 cards
+                return 1; // Mobile: 1 card
+            }
+            
+            function updateSlider() {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                
+                // Update active classes for dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+                
+                // Calculate transform based on visible cards
+                const slideWidth = 100 / visibleCards;
+                const transformValue = -currentSlide * slideWidth;
+                
+                // Apply smooth transition for normal updates
+                slider.style.transition = 'transform 0.6s var(--ease-smooth)';
+                slider.style.transform = `translateX(${transformValue}%)`;
+                
+                // Adjust current slide if it goes beyond available slides for current view
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                if (currentSlide > maxSlide) {
+                    currentSlide = maxSlide;
+                }
+            }
+            
+            function goToSlide(index) {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                
+                currentSlide = Math.min(index, maxSlide);
+                updateSlider();
+                resetInterval();
+            }
+            
+            function nextSlide() {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                
+                if (currentSlide >= maxSlide) {
+                    currentSlide = 0; // Loop back to start
+                } else {
+                    currentSlide++;
+                }
+                updateSlider();
+            }
+            
+            function prevSlide() {
+                const visibleCards = getVisibleCards();
+                const totalSlides = slides.length;
+                const maxSlide = Math.max(0, totalSlides - visibleCards);
+                
+                if (currentSlide <= 0) {
+                    currentSlide = maxSlide; // Go to last possible slide
+                } else {
+                    currentSlide--;
+                }
+                updateSlider();
+            }
+            
+            function startInterval() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            function resetInterval() {
+                clearInterval(slideInterval);
+                startInterval();
+            }
+            
+            function stopInterval() {
+                clearInterval(slideInterval);
+            }
+            
+            // Drag/Swipe functionality
+            function getPositionX(event) {
+                return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+            }
+            
+            function setSliderPosition() {
+                const visibleCards = getVisibleCards();
+                const slideWidth = 100 / visibleCards;
+                const dragTranslate = (currentTranslate / slider.offsetWidth) * 100;
+                
+                // Remove transition during drag
+                slider.style.transition = 'none';
+                slider.style.transform = `translateX(${dragTranslate}%)`;
+            }
+            
+            function animation() {
+                setSliderPosition();
+                if (isDragging) {
+                    requestAnimationFrame(animation);
+                }
+            }
+            
+            function startDrag(event) {
+                isDragging = true;
+                startPos = getPositionX(event);
+                animationID = requestAnimationFrame(animation);
+                
+                // Stop auto-sliding during drag
+                stopInterval();
+                
+                // Prevent default behavior
+                event.preventDefault();
+            }
+            
+            function drag(event) {
+                if (isDragging) {
+                    const currentPosition = getPositionX(event);
+                    currentTranslate = prevTranslate + currentPosition - startPos;
+                }
+            }
+            
+            function endDrag() {
+                if (!isDragging) return;
+                
+                isDragging = false;
+                cancelAnimationFrame(animationID);
+                
+                const visibleCards = getVisibleCards();
+                const slideWidth = 100 / visibleCards;
+                const movedBy = currentTranslate - prevTranslate;
+                
+                // Determine if drag was significant enough to change slide
+                if (Math.abs(movedBy) > slider.offsetWidth * 0.1) { // 10% threshold
+                    if (movedBy < 0) {
+                        nextSlide();
+                    } else {
+                        prevSlide();
+                    }
+                } else {
+                    // Return to original position
+                    updateSlider();
+                }
+                
+                // Reset drag variables
+                currentTranslate = 0;
+                prevTranslate = 0;
+                
+                // Restart auto-sliding after a delay
+                setTimeout(() => {
+                    if (!isDragging) {
+                        resetInterval();
+                    }
+                }, 1000);
+            }
+            
+            // Event listeners for buttons and dots
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    resetInterval();
+                });
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    resetInterval();
+                });
+            }
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                });
+            });
+            
+            // Hover auto-stop
+            if (sliderContainer) {
+                sliderContainer.addEventListener('mouseenter', () => {
+                    stopInterval();
+                });
+                
+                sliderContainer.addEventListener('mouseleave', () => {
+                    if (!isDragging) {
+                        resetInterval();
+                    }
+                });
+            }
+            
+            // Touch events for mobile drag/swipe
+            slider.addEventListener('touchstart', startDrag);
+            slider.addEventListener('touchmove', drag);
+            slider.addEventListener('touchend', endDrag);
+            
+            // Mouse events for desktop drag
+            slider.addEventListener('mousedown', startDrag);
+            slider.addEventListener('mousemove', drag);
+            slider.addEventListener('mouseup', endDrag);
+            slider.addEventListener('mouseleave', endDrag);
+            
+            // Prevent image drag
+            slider.querySelectorAll('img').forEach(img => {
+                img.addEventListener('dragstart', (e) => e.preventDefault());
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', updateSlider);
+            
+            // Initialize
+            updateSlider();
+            startInterval();
+        })();
+    </script>
+    <script>
+        (function() {
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+
+            function setIcon(theme) {
+                if (!themeIcon) return;
+                themeIcon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+            }
+
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.body.classList.add('dark');
+                } else {
+                    document.body.classList.remove('dark');
+                }
+                setIcon(theme);
+                try { localStorage.setItem('theme', theme); } catch (e) {}
+            }
+
+            const stored = (function() {
+                try { return localStorage.getItem('theme'); } catch(e){ return null; }
+            })();
+
+            const initial = stored || 'light';
+            applyTheme(initial);
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+                    applyTheme(newTheme);
+                });
+            }
+        })();
+    </script>
+    <script>
+        (function() {
+            const overlay = document.getElementById('searchOverlay');
+            const toggle = document.getElementById('searchToggle');
+            const close = document.getElementById('searchClose');
+            const input = document.getElementById('searchInput');
+            const icon = document.getElementById('searchInputIcon');
+
+            function openSearch() {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                setTimeout(() => input && input.focus(), 100);
+                if (icon) icon.classList.add('focused');
+            }
+
+            function closeSearch() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                if (input) input.value = '';
+                if (icon) icon.classList.remove('focused');
+            }
+
+            if (toggle) toggle.addEventListener('click', openSearch);
+            if (close) close.addEventListener('click', closeSearch);
+
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeSearch();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    overlay.classList.contains('active') ? closeSearch() : openSearch();
+                }
+                if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                    closeSearch();
+                }
+            });
+
+            if (input) {
+                input.addEventListener('focus', function() {
+                    if (icon) icon.classList.add('focused');
+                });
+                input.addEventListener('blur', function() {
+                    if (!input.value) icon.classList.remove('focused');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
