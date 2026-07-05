@@ -31,10 +31,24 @@
     --bs-border-radius-xl: var(--radius-lg);
     --theme-transition-duration: 0.35s;
 }
+/* 
+myanmargantgaw
+myanmarangoun
+MyanmarChatu
+MyanmarNjaun
+Myanmar\ Latpan.ttf
+Myanmar\ MUA\ font.ttf
+
+ */
+@font-face {
+    font-family: "Padauk";
+    src: url("../pyidaungsu1/myanmargantgaw.ttf") format("truetype");
+}
+
 
 /* Smooth theme transitions */
 *, *::before, *::after {
-    font-family: "Padauk", sans-serif;
+  font-family: "Padauk" !important;
   font-weight: 400;
   font-style: normal;
     transition: background-color var(--theme-transition-duration) var(--ease-smooth),
@@ -140,8 +154,8 @@ body.dark .bg-white {
 }
 
 .nav-link {
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: bold;
+    font-size: 16px;
     color: var(--text-body) !important;
     padding: 0.5rem 1rem !important;
     border-radius: var(--radius-pill);
@@ -319,17 +333,17 @@ body.dark .hero-section::before {
 }
 
 /* Background image for desktop */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .hero-section {
         background: rgb(22, 18, 18);
         background-image: url("../images/background.png");
         background-size: cover;
         background-position: center;
     }
-}
+} */
 
 /* Background image for mobile hero image wrap - Flexible Dark Mode */
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
     body.dark .hero-image-wrap {
         background: linear-gradient(160deg, var(--white) 0%, #1a1c1e 45%, #0f1112 100%);
     }
@@ -350,7 +364,7 @@ body.dark .hero-section::before {
         transition: background var(--theme-transition-duration) var(--ease-smooth);
     }
     
-}
+} */
 
 .hero-grid-pattern {
     display: none;

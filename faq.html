@@ -18,14 +18,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
 
     <!-- Announcement Bar -->
-    <div class="announcement-bar text-white py-2 text-center">
-        မြန်မာ့ရိုးရာ လက်မှုပညာဖြင့် ဖန်တီးထားသော အရည်အသွေးမြင့် ဖိနပ်များ။ သက်တောင့်သက်သာ၊ ခိုင်ခံ့ပြီး အစဉ်အလာ၏ တန်ဖိုးကို ခြေလှမ်းတိုင်းတွင် ခံစားနိုင်ပါသည်။
+    <div class="announcement-bar text-white py-2 text-center d-none d-md-block">
+        မြန်မာ့ရိုးရာ လက်မှုပညာဖြင့် ဖန်တီးထားသော အရည်အသွေးမြင့် ဖိနပ်များ။ သက်တောင့်သက်သာ၊ ခိုင်ခံ့ပြီး အစဉ်အလာ၏ တန်ဖိုးကို ခြေလှမ်းတိုင်းတွင် ခံစားနိုင်ပါသည်။    
+    </div>
+    <div class="announcement-bar text-white py-2 text-center d-block d-md-none">
+        အရည်အသွေးမြင့်၊ သက်တောင့်သက်သာရှိသော မြန်မာ့လက်မှုပညာ ဖိနပ်များ။
     </div>
 
     <!-- Navbar -->
@@ -95,79 +97,120 @@
         <!-- FAQ -->
         <section class="section-padding">
             <div class="container">
+
                 <div class="text-center mb-5">
                     <span class="about-hero-badge mb-3 d-inline-flex">
-                        <i class="bi bi-question-circle"></i> Quick Answers
+                        <i class="bi bi-question-circle"></i> အမေးများသော မေးခွန်းများ
                     </span>
-                    <h2 class="display-font display-4 fw-bold mb-3">Frequently Asked Questions</h2>
-                    <p class="mx-auto" style="max-width:560px;color:var(--text-muted);">Find quick answers to the most common questions. If you need more help, just drop us a message.</p>
+
+                    <h2 class="display-font display-4 fw-bold mb-3">
+                        မကြာခဏ မေးလေ့ရှိသော မေးခွန်းများ
+                    </h2>
+
+                    <p class="mx-auto" style="max-width:560px;color:var(--text-muted);">
+                        ဖောက်သည်များ မကြာခဏ မေးမြန်းလေ့ရှိသော မေးခွန်းများအတွက် အဖြေများကို ဤနေရာတွင် ကြည့်ရှုနိုင်ပါသည်။ ထပ်မံသိရှိလိုပါက ကျွန်ုပ်တို့ထံ ဆက်သွယ်မေးမြန်းနိုင်ပါသည်။
+                    </p>
                 </div>
+
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
+
                         <div class="accordion faq-accordion" id="faqAccordion">
+
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                        What is your shipping policy?
+                                    <button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        ပစ္စည်းပို့ဆောင်မှုကို ဘယ်လိုဆောင်ရွက်ပေးပါသလဲ။
                                     </button>
                                 </h3>
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+
+                                <div id="faq1" class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        We offer free standard shipping on all orders over $75. Standard delivery takes 5–7 business days. Express shipping (2–3 business days) is available for $12.99. International shipping rates vary by destination.
+                                        မြန်မာနိုင်ငံအနှံ့ ပစ္စည်းပို့ဆောင်ပေးပါသည်။ ပို့ဆောင်ခနှင့် ပို့ဆောင်ချိန်သည် မြို့နယ်နှင့် တည်နေရာအပေါ် မူတည်၍ ကွာခြားနိုင်ပါသည်။
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                        How do I return or exchange an item?
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        ဖိနပ်ကို လဲလှယ်ခြင်း သို့မဟုတ် ပြန်အပ်နိုင်ပါသလား။
                                     </button>
                                 </h3>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div id="faq2" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        We accept returns within 60 days of purchase. Items must be unworn and in original packaging. Start a return through your account dashboard or contact our support team for a prepaid shipping label.
+                                        ဝယ်ယူပြီး သတ်မှတ်ထားသော ရက်အတွင်း မအသုံးပြုရသေးသော ဖိနပ်များကို အရွယ်အစား လဲလှယ်နိုင်ပါသည်။ အသေးစိတ်အချက်အလက်များအတွက် ကျွန်ုပ်တို့၏ ဖောက်သည်ဝန်ဆောင်မှုကို ဆက်သွယ်နိုင်ပါသည်။
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                        Do you have a size guide?
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        ဖိနပ်အရွယ်အစား (Size Guide) ရှိပါသလား။
                                     </button>
                                 </h3>
-                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div id="faq3" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        Yes! Our size guide is available on every product page. We recommend measuring your foot length and comparing it to our size chart. If you are between sizes, we suggest sizing up for the best fit.
+                                        ရှိပါသည်။ ထုတ်ကုန်စာမျက်နှာတိုင်းတွင် Size Guide ကို ဖော်ပြထားပြီး မိမိခြေထောက်အရှည်ကို တိုင်းတာ၍ သင့်တော်သော အရွယ်အစားကို ရွေးချယ်နိုင်ပါသည်။
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                        Can I change or cancel my order?
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        အော်ဒါတင်ပြီးနောက် ပြင်ဆင်ခြင်း သို့မဟုတ် ပယ်ဖျက်နိုင်ပါသလား။
                                     </button>
                                 </h3>
-                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div id="faq4" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        You can modify or cancel your order within 1 hour of placing it. After that, the order enters processing and cannot be changed. Contact us immediately if you need assistance.
+                                        အော်ဒါတင်ပြီး မကြာမီအချိန်အတွင်း ပြင်ဆင်ခြင်း သို့မဟုတ် ပယ်ဖျက်နိုင်ပါသည်။ ပစ္စည်းပို့ဆောင်ရန် စတင်ဆောင်ရွက်ပြီးနောက် ပြင်ဆင်ရန် မဖြစ်နိုင်တော့ပါ။
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                        What payment methods do you accept?
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        မည်သည့် ငွေပေးချေမှုနည်းလမ်းများကို လက်ခံပါသလဲ။
                                     </button>
                                 </h3>
-                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div id="faq5" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        We accept Visa, Mastercard, American Express, PayPal, Apple Pay, and Google Pay. All transactions are encrypted and processed securely.
+                                        KBZPay၊ Wave Pay၊ AYA Pay၊ CB Pay၊ ဘဏ်ငွေလွှဲနှင့် ငွေသားဖြင့် ပေးချေမှု (Cash on Delivery) တို့ကို လက်ခံပေးပါသည်။
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </section>
 
