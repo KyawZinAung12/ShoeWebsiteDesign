@@ -34,6 +34,9 @@
 
 /* Smooth theme transitions */
 *, *::before, *::after {
+    font-family: "Padauk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     transition: background-color var(--theme-transition-duration) var(--ease-smooth),
                 color var(--theme-transition-duration) var(--ease-smooth),
                 border-color var(--theme-transition-duration) var(--ease-smooth),
@@ -286,10 +289,10 @@ body.dark .hamburger span {
 }
 
 /* Hero */
+/* Hero - Flexible Dark Mode Design */
 .hero-section {
-    background: linear-gradient(160deg, var(--white) 0%, var(--cream) 45%, var(--cream-dark) 100%);
-    min-height: 88vh;
     position: relative;
+    min-height: 88vh;
     overflow: hidden;
 }
 
@@ -301,6 +304,52 @@ body.dark .hamburger span {
         radial-gradient(ellipse at 85% 15%, rgba(197, 160, 40, 0.14), transparent 50%),
         radial-gradient(ellipse at 10% 85%, rgba(165, 42, 42, 0.06), transparent 45%);
     pointer-events: none;
+    transition: background var(--theme-transition-duration) var(--ease-smooth);
+}
+
+/* Dark mode background */
+body.dark .hero-section {
+    background: linear-gradient(160deg, var(--white) 0%, #1a1c1e 45%, #0f1112 100%);
+}
+
+body.dark .hero-section::before {
+    background:
+        radial-gradient(ellipse at 85% 15%, rgba(197, 160, 40, 0.08), transparent 50%),
+        radial-gradient(ellipse at 10% 85%, rgba(165, 42, 42, 0.04), transparent 45%);
+}
+
+/* Background image for desktop */
+@media (min-width: 992px) {
+    .hero-section {
+        background: rgb(22, 18, 18);
+        background-image: url("../images/background.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Background image for mobile hero image wrap - Flexible Dark Mode */
+@media (max-width: 767.98px) {
+    body.dark .hero-image-wrap {
+        background: linear-gradient(160deg, var(--white) 0%, #1a1c1e 45%, #0f1112 100%);
+    }
+
+    body.dark .hero-image-wrap::before {
+        background:
+            radial-gradient(ellipse at 85% 15%, rgba(197, 160, 40, 0.08), transparent 50%),
+            radial-gradient(ellipse at 10% 85%, rgba(165, 42, 42, 0.04), transparent 45%);
+    }
+    .hero-image-wrap {
+        position: relative;
+        background: rgb(22, 18, 18);
+        background-image: url("../images/background.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        transition: background var(--theme-transition-duration) var(--ease-smooth);
+    }
+    
 }
 
 .hero-grid-pattern {
@@ -312,10 +361,23 @@ body.dark .hamburger span {
     color: var(--brand-gold-dark);
     border: 1px solid rgba(197, 160, 40, 0.25);
     font-weight: 600;
+    transition: background var(--theme-transition-duration) var(--ease-smooth),
+                color var(--theme-transition-duration) var(--ease-smooth),
+                border-color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .hero-badge {
+    color: var(--brand-gold);
+    border-color: rgba(197, 160, 40, 0.35);
 }
 
 .hero-title {
     color: var(--brand-brown);
+    transition: color var(--theme-transition-duration) var(--ease-smooth);
+}
+
+body.dark .hero-title {
+    color: var(--text-body);
 }
 
 .hero-title .highlight {
